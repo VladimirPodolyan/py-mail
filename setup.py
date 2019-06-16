@@ -14,9 +14,7 @@ setuptools.setup(
     url="https://github.com/VladimirPodolyan/pymail",
     packages=setuptools.find_packages(),
     extras_require={
-        'test': [
-            '-e "self.project"',
-        ]
+        'test': ['-e "git+git@github.com:VladimirPodolyan/pymail.git@add-setup#egg=pymail"']
     },
     classifiers=[
         "Programming Language :: Python :: 3"
