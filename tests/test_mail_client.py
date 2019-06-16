@@ -5,7 +5,7 @@ import pytest
 import random
 import os
 
-from mail_client import MailClient
+from src.mail_client import MailClient
 from tests.email_records import NOT_PARSED_EMAIL, PARSED_EMAIL
 
 
