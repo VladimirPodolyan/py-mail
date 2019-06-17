@@ -22,7 +22,7 @@ Received: from NjkxMzM5Mg (ec2-35-160-91-185.us-west-2.compute.amazonaws.com [35
     Fri, 14 Sep 2018 09:07:53.395 +0000 (UTC)
 Content-Type: multipart/alternative; boundary=d31cee9360929dfd2b7189018fea70c9cb1f37d213ed5b0b935841455965
 Date: Fri, 14 Sep 2018 09:07:53 +0000 (UTC)
-From: "statusnya Support" <notification+ABC123@example.com>
+From: "Amazing Support" <notification+ABC123@example.com>
 Mime-Version: 1.0
 Reply-to: support@example.com
 To: test test <www+ABC123@example.com>
@@ -35,7 +35,7 @@ X-SG-EID: de8IIHdyL1it6Yew7Ep1KMVq0UaO1RjaS41G0NzLV3etAOcU7kl6JZAzg0l6vQ2Wnfw25F
 X-SG-ID: ej4nT81hSxGYlXaeVp3cI2yy1N8ZLMVhnwFf9jVfZExVnBvLl1x3CTTEaa/i0ip1+cbjxyfhNN29oP
  DXJpd1Fv0wGn6pAyl3YX3SqBfQ/A4+6CCQXlwoHTSsCHlycBVc
 X-Feedback-ID: 6913392:h6VWkon+v2fnC9kyZ7xLDtz/0CAQPD/8O52AB4Yvi1E=:sucKYeTyQIs7YiTfKRWk7Is3wQ5gxvi/cOwDYnPm1cc=:SG
---d31cee9360929dfd2b7189018fea70c9cb1f37d213ed5b0b935841455965
+--d31cee9360929dfd2b7189018fea70786841455965
 content-transfer-encoding: quoted-printable
 content-type: text/plain; charset="UTF-8"
 Mime-Version: 1.0
