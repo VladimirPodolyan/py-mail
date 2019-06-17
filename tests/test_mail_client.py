@@ -15,29 +15,30 @@ GET_TOKEN = os.environ['GMAIL_TOKEN']
 
 
 def create_email(random_stamp: int):
+    address = GET_GMAIL_ADDRESS
     pid = os.getpid()
     rdm_digit = random.randint(0, 1000)
     timestamp_tag = datetime.now().isoformat('-', timespec='seconds').replace(':', '-')
-    return f'pymail.auto+pid-{pid}-{random_stamp}-{rdm_digit}-sm-at-{timestamp_tag}@gmail.com'
+    return f'{address[:-10]}+pid-{pid}-{random_stamp}-{rdm_digit}-sm-at-{timestamp_tag}{address[11:23]}'
 
 
 @pytest.fixture
 def smtp_client():
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.login('pymail.auto@gmail.com', GET_TOKEN)
+    server.login(GET_GMAIL_ADDRESS, GET_TOKEN)
     return server
 
 
 @pytest.fixture
 def imap_client():
-    return MailClient('pymail.auto@gmail.com', GET_TOKEN)
+    return MailClient(GET_GMAIL_ADDRESS, GET_TOKEN)
 
 
 def send_mail(server, to, text, subject=None):
     available_subject = f'Subject: {subject}\n' if subject else '\n'
     to_address = f'Delivered-To: {to}\n'
     complete_body = f'{to_address}{available_subject}{text}'
-    return server.sendmail('pymail.auto@gmail.com', to, complete_body)
+    return server.sendmail(GET_GMAIL_ADDRESS, to, complete_body)
 
 
 def test_empty_label(imap_client):
@@ -87,7 +88,7 @@ def test_delivered_to(mocked_imap_client):
 
 def test_get_first_text_block(mocked_imap_client):
     """ get_first_text_block is parsing raw email text and should equal parsed email text """
-    email_message = mocked_imap_client.get_first_text_block(NOT_PARSED_EMAIL)
+    email_message = mocked_imap_client._get_first_text_block(NOT_PARSED_EMAIL)
     assert email_message == PARSED_EMAIL
 
 
