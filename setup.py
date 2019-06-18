@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="py-mail",
-    version="0.0.2",
+    version="0.0.3",
     author="PVladimir",
     author_email="vladimir.podolyan64@gmail.com",
     description="gmail client for python",
