@@ -11,7 +11,7 @@ setuptools.setup(
     description="gmail client for python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/VladimirPodolyan/pymail",
+    url="https://github.com/VladimirPodolyan/py-mail",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3"
