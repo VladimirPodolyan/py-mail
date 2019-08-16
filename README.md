@@ -1,6 +1,5 @@
 # py-mail
 [![Build status](https://badge.buildkite.com/fbb36b87bde2961909dc80c077614ff47acbf0e980cb1e62d6.svg?branch=master)](https://buildkite.com/pryanik/test-pymail)
-[![](https://www.codewars.com/users/PVladimir/badges/small)](https://www.codewars.com/users/PVladimir/)
 
 
 The project will provide the ability to receive data from the gmail mailbox in human readable type.
